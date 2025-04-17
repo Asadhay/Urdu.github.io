@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English with Asad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            background: black;
+            color: white;
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: black;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .course-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .course-box {
+            background: white;
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .course-box:hover {
+            transform: scale(1.1);
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            margin: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+        .btn-pink {
+            background-color: #ff1493;
+        }
+        .btn-green {
+            background-color: #32cd32;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .certificate {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .certificate img {
+            width: 300px;
+            border: 10px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            animation: rotateCertificate 5s linear infinite;
+        }
+        @keyframes rotateCertificate {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        .contact {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <audio id="welcomeAudio" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    <script>
+        window.onload = function() {
+            document.getElementById("welcomeAudio").play();
+        };
+    </script>
+    <div class="container">
+        <h1>Learn English with Asad</h1>
+        <div class="subtitle">Elevate Your English Language Skills with Asad</div>
+        <div class="course-list">
+            <div class="course-box" onclick="playSound()">IELTS</div>
+            <div class="course-box" onclick="playSound()">PTE</div>
+            <div class="course-box" onclick="playSound()">Grammar</div>
+            <div class="course-box" onclick="playSound()">Spoken</div>
+            <div class="course-box" onclick="playSound()">Oxford</div>
+        </div>
+        <p>As a certified PTE and IELTS trainer, and experienced language teacher, I'm here to help you master the English language.</p>
+        <p>I offer flexible online and on-campus classes tailored to your needs. Let's get started!</p>
+        <div class="buttons">
+            <a href="https://www.facebook.com/share/1WqFSCHg3w/" class="btn btn-pink" target="_blank">Official Page</a>
+            <a href="https://whatsapp.com/channel/0029VaIUCEHAInPqXgczCT0l" class="btn btn-green" target="_blank">Unlock Paid Videos</a>
+        </div>
+        <div class="certificate">
+            <img src="https://i.ibb.co/Gvjyx2VJ/IMG-20250317-WA0004.jpg" alt="Certificate">
+        </div>
+        <div class="contact">
+            <p>Contact Us: +92 315 7148066</p>
+        </div>
+    </div>
+    <script>
+        function playSound() {
+            var audio = new Audio('https://www.soundjay.com/button/button-1.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
